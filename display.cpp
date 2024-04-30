@@ -3,13 +3,10 @@
 #include <string>
 using namespace std;
 
-struct Vehicle {
-    int year;
-    string make;
-    string model;
-    string color;
-    double price;
-};
+
+void readCustomer (vector <Customer>& customers);
+void readVehicles (vector <Vehicle>& vehicles);
+void calculateSales (vector <Vehicle>& vehicles);
 
 int main() {
     // Creating a vector of vehicles
@@ -21,13 +18,7 @@ int main() {
 
     // Looping through each vehicle and displaying its information
     for (int i = 0; i < vehicles.size(); ++i) {
-        cout << "Vehicle " << i + 1 << ":\n";
-        cout << "    Year: " << vehicles[i].year << "\n";
-        cout << "    Make: " << vehicles[i].make << "\n";
-        cout << "    Model: " << vehicles[i].model << "\n";
-        cout << "    Color: " << vehicles[i].color << "\n";
-        cout << "    Price: $" << vehicles[i].price << "\n";
-        cout << "\n";
+        
     }
 
     return 0;
