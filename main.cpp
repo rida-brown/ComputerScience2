@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include "customer.h"
+#include "vehicle.h"
 
 using namespace std;
 
@@ -14,20 +15,22 @@ int main() {
     vector <Customer> customers;
     vector <Vehicle> vehicles;
     
-    
+ Vehicle car1(2014, "Toyota", "Camry", "green", 14000.00);
+ car1.displayInfo();
     
     
     
     
 //Calling functions    
-    readCustomers (customers); 
-    readVehicles (vehicles);
-    calculateSales (vehicles);
+    //readCustomer (customers); 
+   // readVehicles (vehicles);
+   // calculateSales (vehicles);
     
 // Display vehicle info
 
 for(int i=0; i < vehicles.size(); ++i){ 
     vehicles[i].displayInfo();
+    
     
     
 /*cout << "Customer Types: \n";
@@ -41,7 +44,7 @@ cin >> customerType;*/
 
 //Display customer info
 for (const Customer& customer: customers) {
-    customerDisplayInfo (customerType);
+    
 }
 
 
