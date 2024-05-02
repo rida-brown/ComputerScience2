@@ -10,6 +10,7 @@ class Vehicle {
        string make;
        string model;
        string color;
+       int timeLot;
        double price;
     public:
        
@@ -18,6 +19,7 @@ class Vehicle {
            this-> make = make;
            this-> model = model;
            this-> color = color;
+           this -> timeLot = timeLot
            this-> price = price;
        } 
        void displayInfo() {
