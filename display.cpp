@@ -9,8 +9,8 @@ void readVehicles (vector <Vehicle>& vehicles);
 void calculateSales (vector <Vehicle>& vehicles);
 
 int main() {
-    // Creating a vector of vehicles
-    vector<Vehicle> vehicles = {
+    
+    vector<Vehicle> vehicles  {
         {2022, "Toyota", "Camry", "Red", 25000.00},
         {2021, "Honda", "Civic", "Blue", 22000.00},
         {2023, "Ford", "Mustang", "Black", 35000.00}
