@@ -14,16 +14,16 @@ class Vehicle {
        double price;
     public:
        
-       Vehicle(int year, string make, string model, string color,int timeLot, double price) {
+       Vehicle(int year, string make, string model, string color,int LotTime, double price) {
            this-> year = year;
            this-> make = make;
            this-> model = model;
            this-> color = color;
-           this -> timeLot = timeLot
+           this -> timeLot = LotTime
            this-> price = price;
        } 
        void displayInfo() {
-           cout << "Vehicle: " << make << ", " << model <<  ", " << year << ", " << color << timeLot << ", $" << price << endl;
+           cout << "Vehicle: " << make << ", " << model <<  ", " << year << ", " << color << ", " << lotTime << ", $" << price << endl;
        
        }
        
